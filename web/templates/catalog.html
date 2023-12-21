@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/stylecatalog.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/search.css')}}">
+
+{% endblock %}
+
+{% block bar %}
+{% endblock %}
+
+{% block main %}
+<div class ="search-form">
+    <input class="search-form_txt" type="text">
+    <button class="search-form_btn"><ion-icon name="search-outline"></ion-icon></button>
+
+</div>
+
+<div class="bgcolor">
+    <div class="container mt-5">
+        <div class="row">
+            {% for item in items %}
+                <div class="col-md-3">
+                    <div class="product">
+                        <div class="image">
+
+                            <a href="{{ url_for('item_detail', item_id=item.id) }}"><img src="{{ item.image }}" alt="{{ item.title }}"></a>
+                        </div>
+                        <div class="info">
+
+                            <a href="{{ url_for('item_detail', item_id=item.id) }}" class="thing">{{ item.title }} (ID: {{ item.id }})</a>
+                        </div>
+                        <div class="info-price">
+                            <span class="price">{{ item.price }} Р</span>
+                            <button class="add-to-favourite" onclick="changeIcon(this)"><ion-icon name="{{ 'heart' if item.id in session.get('favourite_items', []) else 'heart-outline' }}"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function changeIcon(button) {
+        var icon = button.querySelector('ion-icon');
+        if (icon.name === 'heart-outline') {
+            icon.name = 'heart';
+        } else {
+            icon.name = 'heart-outline';
+        }
+    }
+</script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+{% endblock %}
+

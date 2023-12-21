@@ -1,0 +1,142 @@
+.body {
+background-color: #f8f8ff;
+}
+
+
+.frame {
+  background-color: #f8f8ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 55px;
+}
+
+.frame .div {
+  background-color: #f8f8ff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.frame .overlap {
+  position: absolute;
+  width: 504px;
+  height: 504px;
+  top: 128px;
+  left: 358px;
+}
+
+.frame .rectangle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 2px;
+  left: 2px;
+}
+
+.frame .image {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border:2px solid black;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 593px;
+  top: 129px;
+  left: 970px;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-2 {
+  width: 121px;
+  top: 365px;
+  left: 970px;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  color: #000000;
+  font-size: 24px;
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-3 {
+  width: 147px;
+  top: 250px;
+  left: 970px;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  color: #ff0000;
+  font-size: 36px;
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+.frame .overlap-group {
+  position: absolute;
+  width: 285px;
+  height: 50px;
+  top: 529px;
+  left: 970px;
+  background-color: #066ece;
+  border-radius: 12px;
+  box-shadow: 0px 4px 0px #04427b, inset 0px 2px 2px #ffffff66;
+  border: none;
+}
+
+.frame .text-wrapper-4 {
+  width: 229px;
+  top: 16px;
+  left: 28px;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  color: #000000;
+  font-size: 16px;
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  border: none;
+  background-color: #066ece;
+}
+
+.frame .text-wrapper-5 {
+  top: 728px;
+  left: 360px;
+  font-family: "Shentox", Helvetica;
+  color: #000000;
+  font-size: 32px;
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.frame .p {
+  position: absolute;
+  width: 1200px;
+  top: 795px;
+  left: 360px;
+  font-family: "Shentox", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Шрифты Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://old.fonts-online.ru/fonts/capital?page=2">
+    <link rel="stylesheet" href="https://fonts-online.ru/categories/capital-fonts">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+	<!-- Стили сайта -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    {% block title %}{% endblock %}
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="navbar-brand">SCARLETSALE</a>
+        <div class="navbar-wrap">
+            <ul class="navbar-menu">
+                <li><a href="/catalog"><ion-icon name="bag-outline"></ion-icon></a></li>
+                <li><a href="/cart"><ion-icon name="cart-outline"></ion-icon></a></li>
+                <li><a href="/favourite"><ion-icon name="heart-outline"></ion-icon></a></li>
+                <li><a href="/about"><ion-icon name="information-circle-outline"></ion-icon></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+{% block bar %}{% endblock %}
+
+{% block main %}{% endblock %}
+</body>
+
+</html>

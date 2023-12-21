@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/item.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/stylecatalog.css')}}">
+{{ item.title }}
+{% endblock %}
+
+{% block bar %}
+{% endblock %}
+
+{% block main %}
+<div class="frame">
+  <div class="div">
+    <div class="overlap">
+        <img class="image" src="{{ item.image }}" alt="{{ item.title }}">
+    </div>
+    <p class="text-wrapper">{{ item.title }}</p>
+    <div class="text-wrapper-2">
+        <label for="size">Размер:</label>
+        <select id="size" name="size">
+            <option value="">Не выбрано</option>
+            {% for size in item.sizes %}
+            <option value="{{ size.id }}">{{ size.value }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="text-wrapper-3">{{ item.price }}Р</div>
+    <div class="text-wrapper-5">Описание:</div>
+    <p class="p">{{ item.text }}</p>
+  </div>
+  <div class="overlap-group">
+    <form action="{{ url_for('add_to_cart', item_id=item.id) }}" method="post">
+        <button type="submit" class="text-wrapper-4">Добавить в корзину</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

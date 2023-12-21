@@ -1,0 +1,80 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+	background-color: #f8f8ff;
+
+}
+
+/**
+ * Другие стили
+ */
+
+.product {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 75px;
+}
+
+.container mt-5 {
+    background-color: #f8f8ff;
+
+}
+
+.image {
+    margin-bottom: 10px;
+}
+
+.image img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-top: 75px;
+}
+
+.info-price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    aligh-items: center;
+
+}
+
+.add-to-favourite {
+    border: none;
+    background-color: #f8f8ff;
+    transition: all .07s ease-in-out;
+    opacity: 0.6;
+    color: #f80000;
+    font-size: 20px;
+}
+
+.add-to-favourite:hover {
+    opacity: 1;
+}
+
+.thing {
+    font-family: 'Carbon2(FONT BY LYAJKA)', serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+.price {
+   color: #f80000;
+   font-family: 'Carbon2(FONT BY LYAJKA)', serif;
+   font-size: 15px;
+   margin-top: 0px;
+}
+
+.bgcolor {
+    background-color:   #f8f8ff;
+}

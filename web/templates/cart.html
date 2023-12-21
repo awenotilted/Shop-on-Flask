@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Корзина
+<link rel="stylesheet" href="{{ url_for('static', filename='css/cart.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/emptycart.css')}}" />
+{% endblock %}
+
+{% block bar %}
+{% endblock %}
+
+{% block main %}
+<div class="text-wrapper-2">Корзина</div>
+    {% if items %}
+        <div class="frame">
+            {% for item in items %}
+            <div class="div">
+                <img class="image" src="{{ item.image }}" alt="{{ item.title }}">
+                <p class="text-wrapper">{{ item.title }}</p>
+                <div class="text-wrapper-3">Размер: {{ item.sizes[0].value if item.sizes else 'Не указан' }}</div>
+                <div class="text-wrapper-4">{{ item.price }} Р</div>
+                <div class="delete">
+                <form action="{{ url_for('remove_from_cart', item_id=item.id) }}" method="post">
+                    <button type="submit" class="remove">Удалить из корзины</button>
+                </form>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="overlap-group">
+                <div class="text-wrapper-5">Оплатить</div>
+            </div>
+        </div>
+    {% else %}
+    <div class="frames">
+        <div class="div">
+            <div class="text-wrappers">Корзина</div>
+            <p class="pp">К сожалению, здесь пока пусто :(</p>
+            <button onclick="location.href='/catalog'" class="overlap-groups">
+                <div class="text-wrapper-22">К покупкам</div>
+            </button>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}

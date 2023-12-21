@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/stylecatalog.css')}}">
+{% endblock %}
+
+{% block bar %}
+{% endblock %}
+
+{% block main %}
+<div class="frame">
+      <div class="frame-wrapper">
+        <div class="div">
+          <div class="text-wrapper">О сайте SCARLETSALE</div>
+          <p class="SCARLETSALE">
+            SCARLETSALE - интернет-магазин&nbsp;&nbsp;одежды, обуви, асксессуаров, <br />предметов интерьера и т.д.
+          </p>
+          <p class="poizon">
+            Интернет-магазин&nbsp;&nbsp;занимающийся поставками оригинальных брендовых товаров из Китая с маркетплейса
+            Poizon.
+          </p>
+          <p class="p">
+            Poizon работает исключительно на внутренний рынок Китая. Поэтому для заказа товара требуется посредник.
+          </p>
+          <p class="text-wrapper-2">
+            После оплаты, наш посредник получает сообщение и покупает товар, затем в течении 7 дней передает его
+            транспортной компании, которая в свою очередь доставляет его к нам на склад во Владивосток. После чего
+            проводится еще одна проверка на брак. В заключение покупателю будет отправлен трек номер товара.
+          </p>
+          <p class="text-wrapper-3">
+            В любой момент вы можете оформить индивидуальный заказ обратившись в Telegram @awenotilted
+          </p>
+          <p class="text-wrapper-4">
+            Китайский маркетплейс с дизайнерскими, брендовыми товарами, которые проходят проверку на оригинальность в
+            несколько этапов. Риск получить подделку практически нулевой. В маркетплейсе есть крупные streetwear бренды,
+            представители люксового сегмента, официальные дистрибьюторы и перекупы.
+          </p>
+          <div class="text-wrapper-5">Что такое Poizon?</div>
+          <p class="text-wrapper-6">Почему я сам не могу заказать с Poizon?</p>
+          <p class="text-wrapper-7">Как происходит покупка и отправка купленного вами товара?</p>
+          <p class="text-wrapper-8">Что делать если нет нужного товара в каталоге?</p>
+          <div class="text-wrapper-9">SCARLETSALE</div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

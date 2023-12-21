@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/stylecatalog.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/favourite.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/emptycart.css')}}">
+{% endblock %}
+
+{% block bar %}
+{% endblock %}
+
+{% block main %}
+
+        <div class="frames">
+            <div class="div">
+                <div class="text-wrappers">Вишлист</div>
+                <p class="pp">К сожалению, здесь пока пусто :(</p>
+            </div>
+        </div>
+
+
+<script type="text/javascript">
+    function changeIcon(button, itemId) {
+        fetch(`/toggle_favourite/${itemId}`, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            credentials: 'same-origin'
+        }).then(response => {
+            if (response.ok) {
+                var icon = button.querySelector('ion-icon');
+                if (icon.name === 'heart-outline') {
+                    icon.name = 'heart';
+                    // Добавить код для обновления интерфейса, если товар добавлен в избранное
+                } else {
+                    icon.name = 'heart-outline';
+                    // Если иконка изменилась на heart-outline, удалить элемент из DOM
+                    button.closest('.div').remove(); // Убедитесь, что у элемента есть класс .div
+                }
+            } else {
+                console.error('Не удалось обновить статус избранного');
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+{% endblock %}

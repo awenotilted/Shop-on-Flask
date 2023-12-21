@@ -1,0 +1,80 @@
+.frames {
+    background-color: #f8f8ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    position: fixed;
+    outline: none;
+}
+
+
+.frames .div {
+    background-color: #f8f8ff;
+    width: 1920px;
+    height: 973px;
+    position: relative;
+    outline: none;
+    margin-top: -50px;
+}
+
+.frames .text-wrappers {
+    top: 63px;
+    left: 775px;
+    font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+    font-size: 64px;
+    position: absolute;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+    outline: none;
+
+}
+
+.frames .pp {
+    top: 344px;
+    left: 733px;
+    font-family: "Shentox", Helvetica;
+    font-size: 32px;
+    white-space: nowrap;
+    position: absolute;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+    outline: none;
+}
+
+.frames .overlap-groups {
+    position: absolute;
+    width: 355px;
+    height: 76px;
+    top: 566px;
+    left: 782px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 0px #0d435a, inset 0px 4px 0px #487e93;
+    background: linear-gradient(
+        180deg,
+        rgba(36, 108, 136) 19.44%,
+        rgba(106.22, 172.03, 197.62) 50.71%,
+        rgba(36, 108, 136) 81.22%
+    );
+    outline: none;
+}
+
+.frames .text-wrapper-22 {
+    width: 257px;
+    top: 19px;
+    left: 49px;
+    font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+    font-size: 32px;
+    white-space: nowrap;
+    position: absolute;
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+    outline: none;
+}

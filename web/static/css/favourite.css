@@ -1,0 +1,77 @@
+.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position; fixed
+}
+
+.frame .div {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 687px;
+  top: 162px;
+  left: 665px;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-2 {
+  width: 300px;
+  top: 45px;
+  left: 810px;
+  color: #000000;
+  font-size: 48px;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-3 {
+  width: 142px;
+  top: 218px;
+  left: 668px;
+  color: #ff0000;
+  font-size: 36px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .image {
+  position: absolute;
+  width: 204px;
+  height: 204px;
+  top: 161px;
+  left: 396px;
+  object-fit: cover;
+  border:2px solid black;
+}
+
+.frame .add-to-favourite {
+  width: 101px;
+  top: 300px;
+  left: 640px;
+  color: #f80000;
+  font-size: 50px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}

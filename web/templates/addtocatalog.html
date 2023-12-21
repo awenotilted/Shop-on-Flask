@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/add.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/stylecatalog.css')}}">
+{% endblock %}
+
+{% block bar %}
+{% endblock %}
+
+{% block main %}
+
+<div class="bgplace">
+  <div class="container">
+    <h1>Добавление товара</h1>
+    <form method="post" action="{{ url_for('addtocatalog') }}" enctype="multipart/form-data">
+        <input type="text" class="form-control" name="title" id="title" placeholder="Введите название товара"><br>
+        <input type="text" class="form-control" name="image" id="image" placeholder="Введите ссылку на фото"><br>
+        <input type="number" class="form-control" name="price" id="price" placeholder="Введите цену товара"><br>
+
+        <!-- Изменения начинаются здесь -->
+        <label for="size">Размеры:</label><br>
+        {% for size in sizes %} <!-- Предполагается, что `sizes` передаются из вашего Flask-приложения -->
+        <input type="checkbox" name="sizes" value="{{ size.id }}"> {{ size.value }}<br>
+        {% endfor %}
+
+        <textarea class="form-control" name="text" id="text" placeholder="Введите описание товара"></textarea><br>
+        <input type="hidden" class="form-control" name="id" id="id" placeholder="Введите номер товара"><br>
+        <button class="btn btn-success" type="submit">Добавить товар</button>
+    </form>
+
+    <h1>Удаление товара</h1>
+    <form method="post" action="{{ url_for('delete_item') }}">
+        <input type="number" class="form-control" name="item_id" id="item_id" placeholder="Введите ID товара для удаления"><br>
+        <button class="btn btn-danger" type="submit">Удалить товар</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

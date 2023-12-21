@@ -1,0 +1,99 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	min-width: 320px;
+	overflow-x: hidden;
+	height: auto;
+}
+
+
+/**
+ * Другие стили
+ */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #f8f8ff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .07s ease-in-out;
+    font-size: 30px;
+}
+
+.navbar-menu li a:hover {
+    opacity: 1;
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 20px;
+}
+
+.callback {
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: #2b7cb6;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .1s ease-out;
+    box-shadow 0 4px 6px rgba(43, 124, 182, .1)
+}
+
+.callback:hover {
+    transform: scale(1.04);
+    color: #fff;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Carbon2(FONT BY LYAJKA)', monospace;
+	font-size: 32px;
+}
+
+.background {
+    background-color: #f8f8ff;
+}
+
+
+
+
+

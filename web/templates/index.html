@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/globals.css')}}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/stylecatalog.css')}}">
+{% endblock %}
+
+{% block bar %}
+{% endblock %}
+
+{% block main %}
+<div class="frame">
+      <div class="div">
+        <div class="overlap">
+          <p class="POIZON">
+            Интернет - магазин оригинальной <br />одежды и обуви<br />
+            с POIZON
+          </p>
+          <div class="group">
+            <button onclick="location.href='/catalog'" class="overlap-group">
+              <div class="text-wrapper">Каталог</div>
+            </button>
+          </div>
+          <img class="element" src="https://media.discordapp.net/attachments/875726319059628053/1185908636401279088/1.png?ex=6591527c&is=657edd7c&hm=c32aab75dd659a5400bb9ad8000354e6d7166c2b14b16e3d306d8e646187413f&=&format=webp&quality=lossless" />
+        </div>
+        <div class="test">
+          <div class="overlap-2">
+            <p class="p">Быстрый возврат товара в случае брака</p>
+            <img class="mask-group" src="https://media.discordapp.net/attachments/875726319059628053/1185921792343289896/mask-group.png?ex=65915ebc&is=657ee9bc&hm=4f0ffe0562eab1298bb6b8d21e3fccd2986688cd8526b9003b4576c99c3c3af1&=&format=webp&quality=lossless" />
+          </div>
+        </div>
+        <div class="element-column">
+          <div class="overlap-2">
+            <p class="text-wrapper-2">Отзывчивая поддержка и возможность подбора индивидуального товара</p>
+            <img class="mask-group" src="https://media.discordapp.net/attachments/875726319059628053/1185921792624300142/mask-group-1.png?ex=65915ebc&is=657ee9bc&hm=574931f3e4a7a260ec2a30db01c475c0f9e3c36da4f25e76ca0b2f384fbd9a5f&=&format=webp&quality=lossless" />
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-2">
+            <p class="text-wrapper-3">Моментальная отправка товара после поступления на наш склад</p>
+            <img class="mask-group" src="https://media.discordapp.net/attachments/875726319059628053/1185921793429614723/mask-group-3.png?ex=65915ebc&is=657ee9bc&hm=f1b017b1ce861fcdda096e68b4ebcaa3be239073c00fec095b3c7c1a845ec700&=&format=webp&quality=lossless" />
+          </div>
+        </div>
+        <div class="overlap-group-wrapper">
+          <div class="overlap-2">
+            <p class="text-wrapper-4">Заказ и оформление товара с Poizon в день покупки</p>
+            <img class="mask-group" src="https://media.discordapp.net/attachments/875726319059628053/1185921793152798831/mask-group-2.png?ex=65915ebc&is=657ee9bc&hm=29447279619c6c0ae20b3935d87928366c9abe66f0d8922af26a4dc22821a990&=&format=webp&quality=lossless" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock %}
+
+

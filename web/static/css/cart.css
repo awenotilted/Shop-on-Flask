@@ -1,0 +1,146 @@
+body {
+background-color: #f8f8ff;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -90px;
+  padding-bottom: 50px;
+}
+
+.frame .delete {
+  width:285
+  height: 50px;
+}
+
+.frame .delete {
+  position: absolute;
+  width: 285px;
+  height: 50px;
+  top: 281px;
+  left: 970px;
+  background-color: #ab1313;
+  border-radius: 12px;
+  box-shadow: 0px 4px 0px #690c0c, inset 0px 2px 2px #ffffff66;
+  outline: none;
+}
+
+.frame .remove {
+  width: 234px;
+  top: 15px;
+  left: 25px;
+  color: #000000;
+  font-size: 16px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  border: none;
+  background-color: #ab1313;
+}
+
+
+.frame .div {
+  width: 1920px;
+  height: 1080px;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin-bottom: 20px;
+
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  width: 687px;
+  top: 185px;
+  left: 665px;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-2 {
+  width: 300px;
+  top: 45px;
+  left: 810px;
+  color: #000000;
+  font-size: 48px;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-3 {
+  width: 133px;
+  top: 294px;
+  left: 665px;
+  color: #000000;
+  font-size: 24px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-4 {
+  width: 142px;
+  top: 246px;
+  left: 656px;
+  color: #ff0000;
+  font-size: 36px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 285px;
+  height: 50px;
+  top: 892px;
+  left: 818px;
+  background-color: #066ece;
+  border-radius: 12px;
+  box-shadow: 0px 4px 0px #04427b, inset 0px 2px 2px #ffffff66;
+  margin-top: -50px;
+}
+
+.frame .text-wrapper-5 {
+  width: 111px;
+  top: 17px;
+  left: 87px;
+  color: #000000;
+  font-size: 16px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Carbon2(FONT BY LYAJKA)", Helvetica;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .image {
+  position: absolute;
+  width: 204px;
+  height: 204px;
+  top: 161px;
+  left: 396px;
+  object-fit: cover;
+  border:2px solid black;
+}
